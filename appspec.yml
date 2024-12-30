@@ -12,11 +12,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/julianneaguilar/Candogram/survey-app
+ - source: /
+   destination: /home/ubuntu/survey-app
 hooks:
-  AfterInstall:
-    - location: AWS_install_scripts/installApp.sh
-      timeout: 600
-      runas: root
+ AfterInstall:
+   - location: AWS_install_scripts/installApp.sh
+     timeout: 600
+     runas: root
+
 
