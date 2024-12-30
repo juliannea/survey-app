@@ -1,0 +1,22 @@
+#version: 0.0
+#os: macOS
+#files:
+ # - source: /
+  #  destination: /System/Volumes/Data/Users/julianneaguilar/Desktop/web dev/Candogram/survey-app
+#hooks:
+ # AfterInstall:
+  #  - location: AWS_install_scripts/installApp.sh
+   #   timeout: 600
+    #  runas: julianneaguilar
+
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/julianneaguilar/Candogram/survey-app
+hooks:
+  AfterInstall:
+    - location: AWS_install_scripts/installApp.sh
+      timeout: 600
+      runas: julianneaguilar
+
